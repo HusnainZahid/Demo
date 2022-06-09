@@ -5,7 +5,8 @@ import {
   ScrollView,
   TextInput,
   TouchableOpacity,
-  StyleSheet
+  StyleSheet,
+  SafeAreaView
 } from 'react-native';
 import {
   widthPercentageToDP as w,
@@ -74,6 +75,7 @@ export default class extends Component{
   render(){
     return(
       <View style={styles.container}>
+        <SafeAreaView/>
         <View style={styles.header}>
           <TouchableOpacity onPress={() => {this.removeEmployee()}}>
           <AntDesign name={'minuscircle'} color={'#000'} size={26}/>
